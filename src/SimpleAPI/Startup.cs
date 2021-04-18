@@ -50,6 +50,7 @@ namespace SimpleAPI
 
             app.UseAuthorization();
 
+            // Just added comment to initiate the trigger on commit
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

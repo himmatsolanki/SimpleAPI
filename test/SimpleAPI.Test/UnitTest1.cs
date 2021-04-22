@@ -2,6 +2,7 @@ using System;
 using Xunit;
 using SimpleAPI.Controllers;
 using Microsoft.Extensions.Logging;
+using System.Linq;
 
 namespace SimpleAPI.Test
 {
@@ -20,7 +21,8 @@ namespace SimpleAPI.Test
         [Fact]
         public void Test1()
         {
-
+            var list = controller.Get();
+            Assert.True(list.Count() > 0);
         }
     }
 }

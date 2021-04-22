@@ -14,7 +14,7 @@ namespace SimpleAPI.Test
         {
             var item = controller.GetById(1);
 
-            Assert.Equal(DateTime.Now.AddDays(1).Date, item.Date.Date);
+            Assert.Equal(DateTime.Now.AddDays(2).Date, item.Date.Date);
         }
 
         [Fact]
